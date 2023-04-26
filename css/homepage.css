@@ -1,0 +1,12 @@
+#home {
+    padding: 30% 5%;
+}
+
+#description {
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 5vw !important;
+}
