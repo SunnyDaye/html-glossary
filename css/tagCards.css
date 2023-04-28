@@ -2,6 +2,13 @@
 .terminal-card{
   max-width: 1300px;
 }
+.terminal-card header:hover {
+  background-color: blueviolet;
+}
 .terminal-card div {
   display:none;
+}
+
+.terminal-card img {
+  width: 500px;
 }
