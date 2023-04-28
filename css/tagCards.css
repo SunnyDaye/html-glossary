@@ -1,3 +1,7 @@
+
+.terminal-card{
+  max-width: 1300px;
+}
 .terminal-card div {
   display:none;
 }
