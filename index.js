@@ -7,8 +7,10 @@ tagCardButtons.forEach((button) => {
         
         if(content.style.display === "" || content.style.display === "none"){
             content.style.display = "block";
+            button.style.backgroundColor = "blueviolet";
         }else{
             content.style.display = "none";
+            button.style.backgroundColor = "#727578";
         }
     });
 });

@@ -3,7 +3,7 @@
   max-width: 1300px;
 }
 .terminal-card header:hover {
-  background-color: blueviolet;
+  background-color: blueviolet !important;
 }
 .terminal-card div {
   display:none;
