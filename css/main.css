@@ -2,7 +2,16 @@ html {
 
 }
 body {
-    max-width:80vw;
-    min-width:280px;
+
+}
+#tags {
+    width: fit-content;
     margin: 0 auto;
+}
+section{
+    width: fit-content;
+}
+
+
+canvas {
 }

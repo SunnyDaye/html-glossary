@@ -1,0 +1,27 @@
+{
+    "particles":{
+        "number":{
+            "value":100
+        },
+        "color":{
+            "value": "#000"
+        },
+        "shape":{
+            "type": "circle"
+        },
+        "opacity":{
+            "value": 0.3,
+            "random": true,
+            "anim":{
+                "enable": false,
+                "speed": 30
+            }
+        },
+        "line_linked":{
+            "enable": true,
+            "distance": 120,
+            "color": "#000",
+            "width": 1
+        }
+    }
+}

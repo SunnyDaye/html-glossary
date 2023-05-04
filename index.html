@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,235 +12,259 @@
     <link rel="stylesheet" href="css/tagCards.css">
     <link rel="stylesheet" href="css/glossary.css">
 </head>
-<body>
-    <section id="home" class="">
-        <div id="description" class="">
-            <h1 class="terminal-prompt">HTML Tag Glossary</h1>
-            <p>This website is a giant list of html tags and how to use them.
-                The tags are categorized into groups that describe what the tag is used for.
-            </p>
-        </div>
-    </section>
-    <section id="glossary" class="">
-        <div id="tags" class="">
-            <h2>Boiler Plate Tags</h2>
-            <p>
-                These tags are the most common tags that appear in almost every 
-                html document. These tags are considered to be apart of the 
-                starter code for any html document.
-            </p>
-            <div class="terminal-timeline">
-                <div class="terminal-card">
-                    <header id="tag-1">&lt;!DOCTYPE html&gt;</header>
-                    <div id="tag-1-content">
-                        <p>This tag tells the browser what kind of html document the page is. This tag is placed at the top of every HTML document.</p>
-                        <img src="images/doctype-code-snippet.png" alt="Code snippet showing example of doctype tag">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-2">&lt;html&gt;</header>
-                    <div id="tag-2-content">
-                        <p>This tag is the starting point and end point for any html document. The html tag encloses all tags in an html document.</p>
-                        <img src="images/html-tag-code-snippet.png" alt="HTML tag code snippet">
-                    </div>
-                </div>
-                
-                <div class="terminal-card">
-                    <header id="tag-3">&lt;head&gt;</header>
-                    <div id="tag-3-content">
-                        <p>
-                            This tag contents all of the meta data for an html document. Meta data is information about the page 
-                            but not information that shows visually on the page.
-                        </p>
-                        <img src="images/head-tag-code-snippet.png" alt="Head tag code snippet">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-4">&lt;meta charset="UTF-8"&gt;</header>
-                    <div id="tag-4-content">
-                        <p>
-                            This tag contents all of the meta data for an html document. Meta data is information about the page 
-                            but not information that shows visually on the page. Most browsers use UTF-8 by default if no character
-                            encoding is specified but because that is not guaranteed, its better to include a character
-                            encoding specification using the &lt;meta&gt; tag in your HTML file.
-                        </p>
-                        <img src="images/setting-charset-code-snippet.png" alt="Meta tag setting charset to UTF-8">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-5">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</header>
-                    <div id="tag-5-content">
-                        <p>
-                            This tag gives the browser instructions on how to control the 
-                            pages's dimensions and scaling. The name=viewport statement tells the browser
-                            that the viewport is going to be edited. The content artibute has two major statements.
-                            The width=device-width statements sets the width of the page to follow the 
-                            screen-width of the device(which will vary depending on the device). The initial-scale=1.0 statement
-                            sets the initial zoom level when the page is first loaded by the browser.
-                        </p>
-                        <img src="images/viewport-code-snippet.png" alt="A code snippet of setting the viewport size">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-6">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</header>
-                    <div id="tag-6-content">
-                        <p>
-                            This tag ensures the Internet Explorer uses the latest available rendering engine
-                            to render a web page, helping to ensure compatibility with older versions of IE. The http-equiv=X-UA-Compatible
-                            statement is used to degine an HTTP header for the document. X-UA-Compatible is a header to support compatibility
-                            with older versions of IE. The IE=edge statement instructs IE to use the highest mode available to render
-                            the web page. This ensures that the web page is rendered consistently across different versions of IE.
-                        </p>
-                        <img src="images/http-equiv-code-snippet.png" alt="A code snippet showing the http-equiv meta tag">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-7">&lt;title&gt;</header>
-                    <div id="tag-7-content">
-                        <p>
-                            This tag shows text on the tab of the web page.
-                        </p>
-                        <img src="images/title-code-snippet.png" alt="A code snippet of the title tag">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-8">&lt;body&gt;</header>
-                    <div id="tag-8-content">
-                        <p>
-                            This tag contains all the elements that will be shown on the 
-                            web page. The body holds the visuals to the web page.
-                        </p>
-                        <img src="images/body-tag-code-snippet.png" alt="A code snippet of the body tag">
-                    </div>
-                </div>
-               
-            </div>
-            <h2>Tags that link other files</h2>
-            <div class="terminal-timeline">
-                <div class="terminal-card">
-                    <header id="tag-9">&lt;link rel="stylesheet" href="path-to-CSS-file-here"&gt;</header>
-                    <div id="tag-9-content">
-                        <p>This tag links CSS files to the document for use.</p>
-                        <img src="images/css-link-code-snippet.png" alt="A code snippet of a css file being linked">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-10">&lt;script src="script.js"&gt;</header>
-                    <div id="tag-10-content">
-                        <p>
-                            This tag allows scripts to be loaded with the document.
-                        </p>
-                        <img src="images/script-code-snippet.png" alt="A code snippet showing the use of a script tag">
-                    </div>
-                </div>
-            </div>
-            <h2>Tags that format or add extra meaning to text</h2>
-            <div class="terminal-timeline">
-                <div class="terminal-card">
-                    <header id="tag-11">&lt;h1&gt; through &lt;h6&gt;</header>
-                    <div id="tag-11-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-12">&lt;p&gt;</header>
-                    <div id="tag-12-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-13">&lt;b&gt;</header>
-                    <div id="tag-13-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-14">&lt;i&gt;</header>
-                    <div id="tag-14-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-15">&lt;sup&gt;</header>
-                    <div id="tag-15-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-16">&lt;sub&gt;</header>
-                    <div id="tag-16-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-17">&lt;strong&gt;</header>
-                    <div id="tag-17-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-18">&lt;em&gt;</header>
-                    <div id="tag-18-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-19">&lt;blockquote cite="url-of-quote"&gt;</header>
-                    <div id="tag-19-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-20">&lt;q&gt;</header>
-                    <div id="tag-20-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-21">&lt;abbr&gt;</header>
-                    <div id="tag-21-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-22">&lt;html tag&gt;</header>
-                    <div id="tag-22-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-23">&lt;html tag&gt;</header>
-                    <div id="tag-23-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-                <div class="terminal-card">
-                    <header id="tag-24">&lt;html tag&gt;</header>
-                    <div id="tag-24-content">
-                        <p></p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-            <h2>Tags that seperate text and media</h2>
 
+<body id="particles-js">
+    
+        <section id="home" class="">
+            <div id="description" class="">
+                <h1 class="terminal-prompt">HTML Tag Glossary</h1>
+                <p>This website is a giant list of html tags and how to use them.
+                    The tags are categorized into groups that describe what the tag is used for.
+                </p>
+            </div>
+        </section>
+        <section id="glossary" class="">
+            <div id="tags" class="">
+                <h2>Boiler Plate Tags</h2>
+                <p>
+                    These tags are the most common tags that appear in almost every
+                    html document. These tags are considered to be apart of the
+                    starter code for any html document.
+                </p>
+                <div class="terminal-timeline">
+                    <div class="terminal-card">
+                        <header id="tag-1">&lt;!DOCTYPE html&gt;</header>
+                        <div id="tag-1-content">
+                            <p>This tag tells the browser what kind of html document the page is. This tag is placed at
+                                the top of every HTML document.</p>
+                            <img src="images/doctype-code-snippet.png"
+                                alt="Code snippet showing example of doctype tag">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-2">&lt;html&gt;</header>
+                        <div id="tag-2-content">
+                            <p>This tag is the starting point and end point for any html document. The html tag encloses
+                                all tags in an html document.</p>
+                            <img src="images/html-tag-code-snippet.png" alt="HTML tag code snippet">
+                        </div>
+                    </div>
+
+                    <div class="terminal-card">
+                        <header id="tag-3">&lt;head&gt;</header>
+                        <div id="tag-3-content">
+                            <p>
+                                This tag contents all of the meta data for an html document. Meta data is information
+                                about the page
+                                but not information that shows visually on the page.
+                            </p>
+                            <img src="images/head-tag-code-snippet.png" alt="Head tag code snippet">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-4">&lt;meta charset="UTF-8"&gt;</header>
+                        <div id="tag-4-content">
+                            <p>
+                                This tag contents all of the meta data for an html document. Meta data is information
+                                about the page
+                                but not information that shows visually on the page. Most browsers use UTF-8 by default
+                                if no character
+                                encoding is specified but because that is not guaranteed, its better to include a
+                                character
+                                encoding specification using the &lt;meta&gt; tag in your HTML file.
+                            </p>
+                            <img src="images/setting-charset-code-snippet.png" alt="Meta tag setting charset to UTF-8">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-5">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </header>
+                        <div id="tag-5-content">
+                            <p>
+                                This tag gives the browser instructions on how to control the
+                                pages's dimensions and scaling. The name=viewport statement tells the browser
+                                that the viewport is going to be edited. The content artibute has two major statements.
+                                The width=device-width statements sets the width of the page to follow the
+                                screen-width of the device(which will vary depending on the device). The
+                                initial-scale=1.0 statement
+                                sets the initial zoom level when the page is first loaded by the browser.
+                            </p>
+                            <img src="images/viewport-code-snippet.png"
+                                alt="A code snippet of setting the viewport size">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-6">&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</header>
+                        <div id="tag-6-content">
+                            <p>
+                                This tag ensures the Internet Explorer uses the latest available rendering engine
+                                to render a web page, helping to ensure compatibility with older versions of IE. The
+                                http-equiv=X-UA-Compatible
+                                statement is used to degine an HTTP header for the document. X-UA-Compatible is a header
+                                to support compatibility
+                                with older versions of IE. The IE=edge statement instructs IE to use the highest mode
+                                available to render
+                                the web page. This ensures that the web page is rendered consistently across different
+                                versions of IE.
+                            </p>
+                            <img src="images/http-equiv-code-snippet.png"
+                                alt="A code snippet showing the http-equiv meta tag">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-7">&lt;title&gt;</header>
+                        <div id="tag-7-content">
+                            <p>
+                                This tag shows text on the tab of the web page.
+                            </p>
+                            <img src="images/title-code-snippet.png" alt="A code snippet of the title tag">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-8">&lt;body&gt;</header>
+                        <div id="tag-8-content">
+                            <p>
+                                This tag contains all the elements that will be shown on the
+                                web page. The body holds the visuals to the web page.
+                            </p>
+                            <img src="images/body-tag-code-snippet.png" alt="A code snippet of the body tag">
+                        </div>
+                    </div>
+
+                </div>
+                <h2>Tags that link other files</h2>
+                <div class="terminal-timeline">
+                    <div class="terminal-card">
+                        <header id="tag-9">&lt;link rel="stylesheet" href="path-to-CSS-file-here"&gt;</header>
+                        <div id="tag-9-content">
+                            <p>This tag links CSS files to the document for use.</p>
+                            <img src="images/css-link-code-snippet.png" alt="A code snippet of a css file being linked">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-10">&lt;script src="script.js"&gt;</header>
+                        <div id="tag-10-content">
+                            <p>
+                                This tag allows scripts to be loaded with the document.
+                            </p>
+                            <img src="images/script-code-snippet.png"
+                                alt="A code snippet showing the use of a script tag">
+                        </div>
+                    </div>
+                </div>
+                <h2>Tags that format or add extra meaning to text</h2>
+                <div class="terminal-timeline">
+                    <div class="terminal-card">
+                        <header id="tag-11">&lt;h1&gt; through &lt;h6&gt;</header>
+                        <div id="tag-11-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-12">&lt;p&gt;</header>
+                        <div id="tag-12-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-13">&lt;b&gt;</header>
+                        <div id="tag-13-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-14">&lt;i&gt;</header>
+                        <div id="tag-14-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-15">&lt;sup&gt;</header>
+                        <div id="tag-15-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-16">&lt;sub&gt;</header>
+                        <div id="tag-16-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-17">&lt;strong&gt;</header>
+                        <div id="tag-17-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-18">&lt;em&gt;</header>
+                        <div id="tag-18-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-19">&lt;blockquote cite="url-of-quote"&gt;</header>
+                        <div id="tag-19-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-20">&lt;q&gt;</header>
+                        <div id="tag-20-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-21">&lt;abbr&gt;</header>
+                        <div id="tag-21-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-22">&lt;html tag&gt;</header>
+                        <div id="tag-22-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-23">&lt;html tag&gt;</header>
+                        <div id="tag-23-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="terminal-card">
+                        <header id="tag-24">&lt;html tag&gt;</header>
+                        <div id="tag-24-content">
+                            <p></p>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h2>Tags that seperate text and media</h2>
+            </div>
             <!--Scripts-->
             <script src="index.js"></script>
-        </div>
+            <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+            <script>
+                particlesJS.load('particles-js', 'particles.json', function () {
+                    console.log('particles.json loaded...');
+                })
+            </script>
     </section>
-    
+
 </body>
+
 </html>
