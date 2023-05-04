@@ -10,7 +10,11 @@ tagCardButtons.forEach((button) => {
             button.style.backgroundColor = "blueviolet";
         }else{
             content.style.display = "none";
-            button.style.backgroundColor = "#727578";
+            button.style.backgroundColor = "#000";
         }
     });
 });
+
+const bodyHeight = document.querySelector("body").offsetHeight;
+const canvas = document.querySelector("canvas");
+canvas.style.height = `${bodyHeight}px`;

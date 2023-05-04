@@ -10,7 +10,7 @@
             "type": "circle"
         },
         "opacity":{
-            "value": 0.3,
+            "value": 0.1,
             "random": true,
             "anim":{
                 "enable": false,
@@ -22,6 +22,9 @@
             "distance": 120,
             "color": "#000",
             "width": 1
+        },
+        "size":{
+            "value": 5
         }
     }
 }
