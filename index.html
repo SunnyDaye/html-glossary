@@ -13,15 +13,10 @@
     <link rel="stylesheet" href="css/homepage.css" />
     <link rel="stylesheet" href="css/tagCards.css" />
     <link rel="stylesheet" href="css/glossary.css" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS.load("particles-js", "particles.json", function () {
-        console.log("particles.json loaded...");
-      });
-    </script>
   </head>
 
-  <body id="particles-js">
+  <body>
+    <div id="particles-js"></div>
     <section id="home" class="">
       <div id="description" class="">
         <h1 class="terminal-prompt">HTML Tag Glossary</h1>
@@ -296,7 +291,13 @@
         <h2>Tags that seperate text and media</h2>
       </div>
       <!--Scripts-->
-      <script defer src="index.js"></script>
+      <script src="index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script>
+        particlesJS.load("particles-js", "particles.json", function () {
+          console.log("particles.json loaded...");
+        });
+      </script>
     </section>
   </body>
 </html>

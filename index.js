@@ -17,4 +17,6 @@ tagCardButtons.forEach((button) => {
 
 const bodyHeight = document.querySelector("body").offsetHeight;
 const canvas = document.querySelector("canvas");
-canvas.style.height = `${bodyHeight}px`;
+canvas.height = bodyHeight;
+
+// document.body.style.background = `url(${canvas.toDataURL()})`;
