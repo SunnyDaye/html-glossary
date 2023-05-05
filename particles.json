@@ -4,13 +4,13 @@
             "value":100
         },
         "color":{
-            "value": "#000"
+            "value": "#6a4c93"
         },
         "shape":{
             "type": "circle"
         },
         "opacity":{
-            "value": 0.1,
+            "value": 0.5,
             "random": true,
             "anim":{
                 "enable": false,
@@ -20,7 +20,7 @@
         "line_linked":{
             "enable": true,
             "distance": 120,
-            "color": "#000",
+            "color": "#6a4c93",
             "width": 1
         },
         "size":{
