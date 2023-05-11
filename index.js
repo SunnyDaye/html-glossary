@@ -12,11 +12,6 @@ tagCardButtons.forEach((button) => {
             content.style.display = "none";
             button.style.backgroundColor = "#000";
         }
+
     });
 });
-
-const bodyHeight = document.querySelector("body").offsetHeight;
-const canvas = document.querySelector("canvas");
-canvas.height = bodyHeight;
-
-// document.body.style.background = `url(${canvas.toDataURL()})`;

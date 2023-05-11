@@ -25,6 +25,10 @@
         },
         "size":{
             "value": 5
+        },
+        "interactivity":{
+            "detect_on": "canvas",
+            "resize": false
         }
     }
 }
